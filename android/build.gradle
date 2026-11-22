@@ -6,7 +6,7 @@ buildscript {
   }
 }
 apply plugin: 'com.android.application'
-
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
   namespace = "io.github.sg_game_studios"
@@ -14,7 +14,7 @@ android {
   sourceSets {
     main {
       manifest.srcFile 'AndroidManifest.xml'
-      java.setSrcDirs(['src/main/java'])
+      java.setSrcDirs(['src/main/java', 'src/main/kotlin'])
       aidl.setSrcDirs(['src/main/java'])
       renderscript.setSrcDirs(['src/main/java'])
       res.setSrcDirs(['res'])
@@ -41,6 +41,11 @@ android {
     sourceCompatibility "21"
     targetCompatibility "21"
     coreLibraryDesugaringEnabled = true
+  }
+  kotlin {
+    compilerOptions {
+      jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
+    }
   }
   buildTypes {
     release {
