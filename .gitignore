@@ -1,55 +1,92 @@
-# Prerequisites
-*.d
+# Compiled class files and packages
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Local configuration & keys
+local.properties
+*.keystore
+*.jks
 
-# Precompiled Headers
-*.gch
-*.pch
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# Shared objects (inc. Windows DLLs)
+# Visual Studio Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Android
+captures/
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# iOS / RoboVM
+robovm-build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# GWT / HTML5
+war/
+gwt-unitCache/
+.gwt/
+
+# LibGDX Natives & Logs
 *.dll
 *.so
-*.so.*
 *.dylib
+hs_err_pid*
+replay_pid*
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
