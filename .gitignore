@@ -1,92 +1,78 @@
-# Compiled class files and packages
-*.class
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# ==========================================
+# GODOT 4+ ENGINE & CACHE
+# ==========================================
+.godot/
+.nomedia
+*.tmp
 
-# Gradle
-.gradle/
+# Godot 3.x legacy cache (safe to keep if migrating)
+.import/
+
+# Automatically generated translation binaries (keep source .csv/.po files!)
+*.translation
+
+# Windows hot-reload DLL copies (Godot 4.2+)
+~*.dll
+
+# ==========================================
+# CREDENTIALS & LOCAL EXPORT CONFIGS
+# ==========================================
+# Note: In Godot 4.1+, secrets moved to .godot/export_credentials.cfg,
+# making export_presets.cfg safe to commit. Keep these ignored just in case:
+export.cfg
+export_credentials.cfg
+
+# ==========================================
+# C# / .NET / MONO
+# ==========================================
+.mono/
+data_*/
+mono_crash.*.json
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+
+# ==========================================
+# EXPORTS & BUILD OUTPUTS
+# ==========================================
+builds/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-gradle-app.setting
-!gradle-wrapper.jar
-.gradletasknamecache
-
-# Local configuration & keys
-local.properties
-*.keystore
-*.jks
-
-# IntelliJ IDEA / Android Studio
-.idea/
-*.iml
-*.ipr
-*.iws
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-# Eclipse
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-# Visual Studio Code
-.vscode/
-
-# NetBeans
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-# Android
-captures/
-.externalNativeBuild
-.cxx
+dist/
+export/
+exports/
+*.exe
+*.pck
 *.apk
 *.aab
-*.ap_
-*.dex
-
-# iOS / RoboVM
-robovm-build/
 *.ipa
-*.dSYM.zip
-*.dSYM
+*.dmg
+*.app
+*.x86_64
+*.arm64
+*.wasm
 
-# GWT / HTML5
-war/
-gwt-unitCache/
-.gwt/
+# ==========================================
+# IDEs & EXTERNAL EDITORS
+# ==========================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
 
-# LibGDX Natives & Logs
-*.dll
-*.so
-*.dylib
-hs_err_pid*
-replay_pid*
-
-# OS-specific files
+# ==========================================
+# OS & ART TOOL BACKUPS
+# ==========================================
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 desktop.ini
+*.blend1
+*.blend2
+*.aseprite~
+*.kra~
+
